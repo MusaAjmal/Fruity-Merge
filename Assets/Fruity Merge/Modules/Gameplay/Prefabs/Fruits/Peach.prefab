@@ -136,6 +136,8 @@ MonoBehaviour:
   fruitData: {fileID: 11400000, guid: 9ef464976b7756e46a2450a1cc1be4dc, type: 2}
   defaultIcon: {fileID: 21300000, guid: 674ec9d4944a9c744929d3ba5fea266e, type: 3}
   blinkIcon: {fileID: 21300000, guid: 616e3d0337ecc8f4dae05edab922b411, type: 3}
+  landVfxPrefab: {fileID: 7290619188052540174, guid: 7a99c9ab9626b354db8fcd876a2abc01, type: 3}
+  mergeVfxPrefab: {fileID: 4673407442453162464, guid: 91bfd95c8f0f1054094a05d4f75fe1f9, type: 3}
 --- !u!60 &2807616095675962115
 PolygonCollider2D:
   m_ObjectHideFlags: 0

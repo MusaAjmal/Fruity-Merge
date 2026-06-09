@@ -1359,6 +1359,63 @@ PolygonCollider2D:
       - {x: 1.312, y: -3.6820002}
       - {x: 1.312, y: 3.6820002}
   m_UseDelaunayMesh: 1
+--- !u!1001 &1555261441
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1729363338379170108, guid: d1eb5e8f8738441398964b474471066b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.95206
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729363338379170108, guid: d1eb5e8f8738441398964b474471066b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.15182
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729363338379170108, guid: d1eb5e8f8738441398964b474471066b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729363338379170108, guid: d1eb5e8f8738441398964b474471066b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729363338379170108, guid: d1eb5e8f8738441398964b474471066b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729363338379170108, guid: d1eb5e8f8738441398964b474471066b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729363338379170108, guid: d1eb5e8f8738441398964b474471066b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729363338379170108, guid: d1eb5e8f8738441398964b474471066b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729363338379170108, guid: d1eb5e8f8738441398964b474471066b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729363338379170108, guid: d1eb5e8f8738441398964b474471066b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7133559405371987339, guid: d1eb5e8f8738441398964b474471066b, type: 3}
+      propertyPath: m_Name
+      value: Vibrations
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d1eb5e8f8738441398964b474471066b, type: 3}
 --- !u!1 &1724499372
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,11 +1536,11 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.35, y: -0.28, z: 0.2}
+  m_Size: {x: 4.35, y: 0.21, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1986088270
 GameObject:
@@ -1761,6 +1818,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1414126015041793565, guid: ebafb1c8efac08940ba52212b76b940a, type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414126015041793565, guid: ebafb1c8efac08940ba52212b76b940a, type: 3}
+      propertyPath: sounds.Array.data[1].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1414126015041793565, guid: ebafb1c8efac08940ba52212b76b940a, type: 3}
+      propertyPath: sounds.Array.data[2].volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3774401863259589542, guid: ebafb1c8efac08940ba52212b76b940a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1881,3 +1950,4 @@ SceneRoots:
   - {fileID: 1209733588}
   - {fileID: 354616004}
   - {fileID: 3159895800694512705}
+  - {fileID: 1555261441}
