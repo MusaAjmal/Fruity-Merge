@@ -15,3 +15,4 @@ MonoBehaviour:
   fruitId: 5
   fruitName: Grape
   prefab: {fileID: 964025266096484126, guid: 3645a089f3d5b534aa7d8689d61e614e, type: 3}
+  fruitScale: 1.2

@@ -161,6 +161,7 @@
 //    }
 //}
 
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
@@ -170,9 +171,14 @@ public class Fruit : MonoBehaviour
     [Header("Fruit Reference")]
     [SerializeField] private FruitSO fruitData;
     public FruitSO Data => fruitData;
+    [SerializeField] private Sprite defaultIcon;
+    [SerializeField] private Sprite blinkIcon;
 
     private SpriteRenderer fruitSprite;
     private bool isMerged = false;
+    private float delay;
+
+   
 
     // Property to retrieve the scale defined in the FruitSO ScriptableObject
     public Vector3 TargetScale
@@ -189,6 +195,7 @@ public class Fruit : MonoBehaviour
 
     private void Start()
     {
+        delay = 0.5f;
         fruitSprite = GetComponent<SpriteRenderer>();
         // Automatically apply the scale from the ScriptableObject
         transform.localScale = TargetScale;
@@ -197,6 +204,11 @@ public class Fruit : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Fruit otherFruit = collision.gameObject.GetComponent<Fruit>();
+
+        //if (otherFruit != null)
+        //{
+        //    StartCoroutine(Blink());
+        //}
         if (otherFruit == null) return;
 
         if (fruitData != null && otherFruit.Data != null && fruitData.FruitId == otherFruit.Data.FruitId)
@@ -216,4 +228,13 @@ public class Fruit : MonoBehaviour
             }
         }
     }
+
+    
+
+    //public IEnumerator Blink()
+    //{
+    //    fruitSprite.sprite = blinkIcon;
+    //    yield return new WaitForSeconds(delay);
+    //    fruitSprite.sprite = defaultIcon;
+    //}
 }

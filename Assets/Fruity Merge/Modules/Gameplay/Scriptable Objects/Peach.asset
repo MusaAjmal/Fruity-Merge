@@ -15,3 +15,4 @@ MonoBehaviour:
   fruitId: 9
   fruitName: Peach
   prefab: {fileID: 964025266096484126, guid: aa9bcab333913c6439c7139ae9bd041a, type: 3}
+  fruitScale: 2

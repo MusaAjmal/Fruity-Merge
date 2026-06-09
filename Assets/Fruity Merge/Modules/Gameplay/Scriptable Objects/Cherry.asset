@@ -15,3 +15,4 @@ MonoBehaviour:
   fruitId: 1
   fruitName: Cherry
   prefab: {fileID: 964025266096484126, guid: 22157a7e5dd52934d8102d703c61f7d6, type: 3}
+  fruitScale: 0.7

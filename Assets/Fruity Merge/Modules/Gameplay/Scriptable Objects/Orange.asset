@@ -15,3 +15,4 @@ MonoBehaviour:
   fruitId: 7
   fruitName: Orange
   prefab: {fileID: 964025266096484126, guid: 8de8ad51229a12f40824fb011e8e6cda, type: 3}
+  fruitScale: 1.3

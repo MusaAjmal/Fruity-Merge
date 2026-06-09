@@ -15,3 +15,4 @@ MonoBehaviour:
   fruitId: 3
   fruitName: Lemon
   prefab: {fileID: 964025266096484126, guid: b92ca348a88e95247ab5ca3b0ff9c25b, type: 3}
+  fruitScale: 0.9

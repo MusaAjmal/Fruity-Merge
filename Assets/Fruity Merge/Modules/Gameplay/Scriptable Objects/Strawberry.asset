@@ -15,3 +15,4 @@ MonoBehaviour:
   fruitId: 2
   fruitName: Strawberry
   prefab: {fileID: 964025266096484126, guid: cefcedcbae60ae74e90823a7d604a0b5, type: 3}
+  fruitScale: 0.8

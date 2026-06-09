@@ -15,3 +15,4 @@ MonoBehaviour:
   fruitId: 6
   fruitName: Guava
   prefab: {fileID: 964025266096484126, guid: 750e47707a1c7fb459c8a9d69d6aedef, type: 3}
+  fruitScale: 1.3

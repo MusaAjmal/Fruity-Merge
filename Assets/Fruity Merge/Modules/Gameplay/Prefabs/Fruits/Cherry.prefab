@@ -82,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: b1c8a0b171ae81c458ce8b3eef55bc6e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -134,8 +134,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fruit
   fruitData: {fileID: 11400000, guid: 8b1b10e7c69861341aebc51ee91e2732, type: 2}
-  baseScale: 1
-  growthFactor: 1.2
+  defaultIcon: {fileID: 21300000, guid: b1c8a0b171ae81c458ce8b3eef55bc6e, type: 3}
+  blinkIcon: {fileID: 21300000, guid: 707dd2f5aef3cfe43901bf0dba171d46, type: 3}
 --- !u!60 &2112573419176244036
 PolygonCollider2D:
   m_ObjectHideFlags: 0

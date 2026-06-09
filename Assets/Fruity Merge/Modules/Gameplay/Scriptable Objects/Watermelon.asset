@@ -15,3 +15,4 @@ MonoBehaviour:
   fruitId: 11
   fruitName: Watermelon
   prefab: {fileID: 964025266096484126, guid: e7554f641b34d654db65c573fd7059a9, type: 3}
+  fruitScale: 3.5
