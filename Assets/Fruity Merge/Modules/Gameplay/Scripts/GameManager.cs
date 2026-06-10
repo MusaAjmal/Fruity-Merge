@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Scene currentScene;
     [SerializeField] private GameObject loadingScreenCanvas;
     [SerializeField] private GameObject gameOverCanvas;
-
+    [SerializeField] private GameObject mainMenuCanvas;
  [SerializeField]   private GameObject gameOverInstance;
 
     private void Awake()
@@ -35,26 +35,11 @@ public class GameManager : MonoBehaviour
 
         if (currentScene.buildIndex == 1)
         {
-            //HandleGameOver();
+            Instantiate(mainMenuCanvas);
         }
     }
 
-    public void HandleGameOver()
-    {
-        if (gameOverInstance == null)
-        {
-            gameOverInstance = Instantiate(gameOverCanvas);
-        }
-    }
-
-    public void Back()
-    {
-        Debug.Log("BTN PRESSED");
-        if (gameOverInstance != null)
-        {
-            gameOverCanvas.SetActive(false);
-            //gameOverInstance = null;
-        }
-    }
+    
+    
 
 }

@@ -6,15 +6,22 @@ public class Peak : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("game over initiated");
         Fruit fruit = other.GetComponent<Fruit>();
 
         if (fruit != null)
         {
             // Start 2-second check when fruit enters
-            gameOverRoutine = StartCoroutine(GameOverTimer(fruit));
+            
+            //gameOverRoutine = StartCoroutine(GameOverTimer(fruit));
         }
     }
+   
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        Debug.Log("HI MOM!");
+    }
     private void OnTriggerExit2D(Collider2D other)
     {
         Fruit fruit = other.GetComponent<Fruit>();

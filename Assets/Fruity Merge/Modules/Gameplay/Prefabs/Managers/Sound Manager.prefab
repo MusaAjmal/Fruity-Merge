@@ -47,21 +47,21 @@ MonoBehaviour:
   sounds:
   - name: Background_Music
     clip: {fileID: 8300000, guid: 24df2b0bf38c3c347be0b84245db97a6, type: 3}
-    volume: 0
+    volume: 1
     pitch: 1
     soundType: 0
     source: {fileID: 0}
     loop: 1
   - name: Fruit_Explosion
     clip: {fileID: 8300000, guid: 7212427ced05b004b81a5edd6f420e27, type: 3}
-    volume: 0
+    volume: 0.198
     pitch: 1
     soundType: 1
     source: {fileID: 0}
     loop: 0
   - name: Fruit_Merge
     clip: {fileID: 8300000, guid: 9ef08d7096cd1d7458e47b307990f09c, type: 3}
-    volume: 0
+    volume: 1
     pitch: 1
     soundType: 1
     source: {fileID: 0}
