@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8680009788347207862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5815544615550069734}
+  - component: {fileID: 6726749436082196741}
+  m_Layer: 0
+  m_Name: UI Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5815544615550069734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8680009788347207862}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.37116, y: -0.52009, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6726749436082196741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8680009788347207862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196594fb407e51d4983f3d849c81527c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIManager
+  loadingScreenCanvas: {fileID: 18495900281571055, guid: 356979d3578fc0643b798937b7c9e50e, type: 3}
+  mainMenuCanvas: {fileID: 6925031526317083885, guid: 1979a68480219fd42ad5d501c28c6d25, type: 3}
+  mainLevelCanvas: {fileID: 4946108701584187232, guid: 961e7ab9f011340479e2cb5ba05ca3f9, type: 3}
+  settingsCanvas: {fileID: 4893406987684675504, guid: 525b5c0e891282043b02852b6e4518b6, type: 3}
+  gameOverCanvas: {fileID: 5006607764833878748, guid: 895812d04f336334cb0302f4d4aa251f, type: 3}
+  pauseMenuCanvas: {fileID: 7929080044912924841, guid: 5d2d8023715ffa148b7f77ef736df928, type: 3}

@@ -172,7 +172,11 @@ public class Fruit : MonoBehaviour
 
             if (MergeManager.Instance != null)
             {
-                Vibrations.Haptic(HapticTypes.HeavyImpact);
+                if (Vibrations.canVibrate)
+                {
+                    Vibrations.Haptic(HapticTypes.Success);
+                }
+               
                 Debug.Log("Vibration Worked!");
 
                 MergeManager.Instance.MergeFruits(this, otherFruit);

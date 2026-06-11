@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Fruity Merge/Modules/Gameplay/Scenes/Loading Screen.unity
     guid: 73c94237ebcb51241908823402479609
   - enabled: 1
-    path: Assets/Fruity Merge/Modules/Gameplay/Scenes/Main Menu.unity
+    path: Assets/Fruity Merge/Modules/Gameplay/Scenes/Menu.unity
     guid: a5719d973a8213f4cbb764d2b8a090ff
   - enabled: 1
-    path: Assets/Fruity Merge/Modules/Gameplay/Scenes/Main Gameplay.unity
+    path: Assets/Fruity Merge/Modules/Gameplay/Scenes/Game.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
