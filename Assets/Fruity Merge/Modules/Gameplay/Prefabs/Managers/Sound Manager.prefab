@@ -66,3 +66,10 @@ MonoBehaviour:
     soundType: 1
     source: {fileID: 0}
     loop: 0
+  - name: Button_Click
+    clip: {fileID: 8300000, guid: 693f433ed9de6a044beee4dee291a8cd, type: 3}
+    volume: 1
+    pitch: 1
+    soundType: 1
+    source: {fileID: 0}
+    loop: 0

@@ -1843,6 +1843,7 @@ GameObject:
   - component: {fileID: 7095944878627600110}
   - component: {fileID: 7480121765266304859}
   - component: {fileID: 904335141142597225}
+  - component: {fileID: 156792473268809533}
   m_Layer: 5
   m_Name: Settings Canvas
   m_TagString: Untagged
@@ -1951,6 +1952,46 @@ MonoBehaviour:
   togglebtn4: {fileID: 6693431346723937060}
   onSprite: {fileID: 21300000, guid: 15a383cea13567446add350d65f95d83, type: 3}
   offSprite: {fileID: 21300000, guid: 0c4a7d61fb681954cb5e2b453f965c24, type: 3}
+--- !u!114 &156792473268809533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4893406987684675504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f1a215658d3614286041920d8d3ff7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonAnimations
+  buttons:
+  - rect: {fileID: 6155846958109453696}
+    targetSize: {x: 300, y: 150}
+    duration: 0.5
+  - rect: {fileID: 3559341715425109507}
+    targetSize: {x: 300, y: 150}
+    duration: 0.5
+  - rect: {fileID: 731966057298301015}
+    targetSize: {x: 300, y: 150}
+    duration: 0.5
+  - rect: {fileID: 6655605756493231186}
+    targetSize: {x: 300, y: 150}
+    duration: 0.5
+  - rect: {fileID: 669777648151327200}
+    targetSize: {x: 800, y: 300}
+    duration: 0.5
+  - rect: {fileID: 2363034368208327998}
+    targetSize: {x: 800, y: 300}
+    duration: 0.5
+  - rect: {fileID: 7897919621870085746}
+    targetSize: {x: 800, y: 300}
+    duration: 0.5
+  - rect: {fileID: 1861816818491970533}
+    targetSize: {x: 800, y: 300}
+    duration: 0.5
+  - rect: {fileID: 8618241151738692559}
+    targetSize: {x: 800, y: 300}
+    duration: 0.5
 --- !u!1 &4931186879427031517
 GameObject:
   m_ObjectHideFlags: 0

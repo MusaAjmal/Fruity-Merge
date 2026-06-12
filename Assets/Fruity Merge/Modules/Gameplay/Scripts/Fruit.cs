@@ -166,12 +166,13 @@ public class Fruit : MonoBehaviour
                     mergeVfxPrefab,
                     mergePos,
                     Quaternion.identity);
-
+                Debug.Log(vfx.name + "is instantiated at: " + vfx.transform.position);
                 Destroy(vfx, 2f);
             }
 
             if (MergeManager.Instance != null)
             {
+                Debug.Log("can Vibrate: " + Vibrations.canVibrate);
                 if (Vibrations.canVibrate)
                 {
                     Vibrations.Haptic(HapticTypes.Success);
@@ -190,6 +191,13 @@ public class Fruit : MonoBehaviour
             }
         }
     }
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    Debug.Log("Collision Happened with: " + collision.gameObject.name);
+    //}
+
+
 }
 
     

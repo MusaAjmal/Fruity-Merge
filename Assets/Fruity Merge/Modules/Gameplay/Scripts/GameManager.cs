@@ -1,9 +1,14 @@
 using System;
 using System.Collections.Generic;
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.SceneManagement;
 using Voodoo.Utils;
+
+
+
+
 public enum UIState
 {
    NONE,
@@ -23,7 +28,7 @@ public class GameManager : MonoBehaviour
     public bool hapticToggle;
     public bool isPaused;
 
-
+    [SerializeField] public GameObject fruitSpawner;
     public Action onStateChanged;
 
     public UIState uiState;
@@ -33,6 +38,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         isPaused = false;
+        ChangeState(UIState.NONE);
+        Vibrations.canVibrate = true;
     }
 
     private void Awake()
@@ -52,16 +59,16 @@ public class GameManager : MonoBehaviour
     }
     public void ManageHaptic()
     {
-        hapticToggle = !hapticToggle;
-        Vibrations.canVibrate = hapticToggle;
+        //hapticToggle = !hapticToggle;
+        Vibrations.canVibrate = !Vibrations.canVibrate;
 
-        PlayerPrefs.SetInt("HapticToggled", hapticToggle ? 1 : 0);
+        PlayerPrefs.SetInt("HapticToggled", Vibrations.canVibrate ? 1 : 0);
         PlayerPrefs.Save();
     }
 
     public bool IsHapticToggled()
     {
-        return hapticToggle;
+        return Vibrations.canVibrate;
     }
 
     public void PlayButtonClickSound()
@@ -78,21 +85,28 @@ public class GameManager : MonoBehaviour
     {
         isPaused = value;
 
-        Time.timeScale = isPaused ? 0f : 1f;
 
+        Time.timeScale = isPaused ? 0f : 1f;
         if (isPaused)
             ChangeState(UIState.OPEN_PAUSEMENU);
         else
             ChangeState(UIState.CLOSE_OVERLAYS);
+        
     }
 
     public void ChangeState(UIState state)
     {
+        SoundManager.instance.PlayOneShotSound("Button_Click");
         uiState = state;
         onStateChanged?.Invoke();
     }
 
 
-
+    public void StopSpawning()
+    {
+        //fruitSpawner.SetActive(false);
+        fruitSpawner.GetComponent<SpawnerController>().enabled = false;
+        ChangeState(UIState.OPEN_GAMEOVER);
+    }
 
 }

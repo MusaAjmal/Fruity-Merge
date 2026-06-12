@@ -2,6 +2,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
 
+
+
+
+
 public class SoundManager : MonoBehaviour
 {
     [SerializeField] public Sound[] sounds;

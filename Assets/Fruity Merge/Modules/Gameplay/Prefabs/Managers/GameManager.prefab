@@ -44,9 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec187b474a804be40bc089a4a11157b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  currentScene: {}
-  loadingScreenCanvas: {fileID: 18495900281571055, guid: 356979d3578fc0643b798937b7c9e50e, type: 3}
-  gameOverCanvas: {fileID: 5006607764833878748, guid: 895812d04f336334cb0302f4d4aa251f, type: 3}
-  mainMenuCanvas: {fileID: 6925031526317083885, guid: 1979a68480219fd42ad5d501c28c6d25, type: 3}
-  gameOverInstance: {fileID: 5006607764833878748, guid: 895812d04f336334cb0302f4d4aa251f, type: 3}
-  settingsCanvas: {fileID: 4893406987684675504, guid: 525b5c0e891282043b02852b6e4518b6, type: 3}
+  hapticToggle: 0
+  isPaused: 0
+  fruitSpawner: {fileID: 5915136330615715714, guid: caefae5ed14565847a22475e9c3aab25, type: 3}
+  uiState: 0

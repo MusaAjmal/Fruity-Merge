@@ -622,30 +622,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1414126015041793565, guid: ebafb1c8efac08940ba52212b76b940a, type: 3}
-      propertyPath: sounds.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1414126015041793565, guid: ebafb1c8efac08940ba52212b76b940a, type: 3}
-      propertyPath: sounds.Array.data[3].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 693f433ed9de6a044beee4dee291a8cd, type: 3}
-    - target: {fileID: 1414126015041793565, guid: ebafb1c8efac08940ba52212b76b940a, type: 3}
-      propertyPath: sounds.Array.data[3].name
-      value: Button_Click
-      objectReference: {fileID: 0}
-    - target: {fileID: 1414126015041793565, guid: ebafb1c8efac08940ba52212b76b940a, type: 3}
-      propertyPath: sounds.Array.data[3].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1414126015041793565, guid: ebafb1c8efac08940ba52212b76b940a, type: 3}
-      propertyPath: sounds.Array.data[3].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1414126015041793565, guid: ebafb1c8efac08940ba52212b76b940a, type: 3}
-      propertyPath: sounds.Array.data[3].soundType
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3774401863259589542, guid: ebafb1c8efac08940ba52212b76b940a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.37116
@@ -759,8 +735,8 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 1974392079}
+  - {fileID: 2104195812}
   - {fileID: 1710995766}
   - {fileID: 479480996}
-  - {fileID: 2104195812}
   - {fileID: 1150852201}
   - {fileID: 4135172986528956179}

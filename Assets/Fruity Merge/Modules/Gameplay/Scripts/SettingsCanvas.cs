@@ -35,7 +35,7 @@ public class SettingsCanvas : MonoBehaviour
 
         if (togglebtn3 != null)
         {
-            togglebtn3.image.sprite = GameManager.Instance.IsHapticToggled() ? offSprite : onSprite;
+            togglebtn3.image.sprite = GameManager.Instance.IsHapticToggled() ? onSprite : offSprite;
         }
     }
 
@@ -77,7 +77,7 @@ public class SettingsCanvas : MonoBehaviour
 
     private void UpdateHapticButtonSprite()
     {
-        togglebtn3.image.sprite = GameManager.Instance.IsHapticToggled() ? offSprite : onSprite;
+        togglebtn3.image.sprite = GameManager.Instance.IsHapticToggled() ? onSprite : offSprite;
     }
 
     public void ToggleHaptic()
