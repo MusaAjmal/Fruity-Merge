@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5511697244457958335}
   - component: {fileID: 2742588647097075172}
   - component: {fileID: 6310751646241226768}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Guava
   m_TagString: Fruit
   m_Icon: {fileID: 0}
